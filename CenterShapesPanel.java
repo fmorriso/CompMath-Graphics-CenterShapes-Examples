@@ -11,13 +11,8 @@ public class CenterShapesPanel extends JPanel
 {
 	public CenterShapesPanel()
 	{
-		// make sure 
-		Border b = this.getBorder();
-		Insets ins = this.getInsets();
-		Border empty = BorderFactory.createEmptyBorder();
-		this.setBorder(empty);
-		b = this.getBorder();
-		ins = this.getInsets();
+		// clear Insets so we can use all of the space of our JPanel
+		this.setBorder(BorderFactory.createEmptyBorder());
 	}
 
 	@Override

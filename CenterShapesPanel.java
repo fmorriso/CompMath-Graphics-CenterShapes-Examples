@@ -15,13 +15,16 @@ public class CenterShapesPanel extends JPanel
 		this.setBorder(BorderFactory.createEmptyBorder());
 	}
 
+	/**
+	 * @param g - the Graphics instance we are drawing on
+	 */
 	@Override
 	protected void paintComponent(Graphics g)
 	{
 		super.paintComponent(g);
 		
 		// get current size of parent container
-		Container parent = this.getParent();
+		Container parent = getParent();
 		int x = parent.getX();
 		int y = parent.getY();
 		int width = parent.getWidth();

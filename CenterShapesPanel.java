@@ -1,19 +1,12 @@
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Graphics;
-import java.awt.Insets;
 
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
-import javax.swing.border.Border;
 
 public class CenterShapesPanel extends JPanel
 {
-	public CenterShapesPanel()
-	{
-		// clear Insets so we can use all of the space of our JPanel
-		this.setBorder(BorderFactory.createEmptyBorder());
-	}
 
 	/**
 	 * @param g - the Graphics instance we are drawing on
@@ -23,7 +16,7 @@ public class CenterShapesPanel extends JPanel
 	{
 		super.paintComponent(g);
 		
-		// get current size of parent container
+		// get current size of parent container (because it may have been resized)
 		Container parent = getParent();
 		int x = parent.getX();
 		int y = parent.getY();

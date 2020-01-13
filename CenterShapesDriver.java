@@ -12,7 +12,7 @@ public class CenterShapesDriver
 		
 		// use a portion of the available device screen
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		final double pct = 0.8;
+		final double pct = 2.0/3;
 		final int squareSize = (int) (Math.min(screenSize.height, screenSize.width) * pct);
 		frame.setSize(squareSize, squareSize);
 		

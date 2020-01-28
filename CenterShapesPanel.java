@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
+@SuppressWarnings("serial")
 public class CenterShapesPanel extends JPanel
 {
 
